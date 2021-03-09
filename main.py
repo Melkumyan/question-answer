@@ -42,7 +42,7 @@ quest_card.draw(10,10)
 ans_card.draw(10,10)
  
 while 1:
-   pygame.display.update()
+
     for event in pygame.event.get():
        if event.type == pygame.KEYDOWN:
  
@@ -67,4 +67,5 @@ while 1:
                    ans_card.set_text('Яблоки', 35)      
  
                ans_card.draw(10, 25)
-   clock.tick(40)           
+    clock.tick(40)
+    pygame.display.update()       
